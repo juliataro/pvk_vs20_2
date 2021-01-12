@@ -13,10 +13,13 @@ class Core
         $this->getUrl();
     }
 
-    public function getUrl(){
-        if(isset($_GET['url'])){
+    public function getUrl()
+    {
+        if (isset($_GET['url'])) {
             $url = $_GET['url'];
             echo $url;
         }
     }
+
 } //class end
+
