@@ -1,6 +1,6 @@
 <?php
 //Project name
-define('PROJECT_NAME', 'pvk_vs20_1');
+define('PROJECT_NAME', 'pvk_vs20_2');
 
 //App root dir
 define('APPROOT', dirname(dirname(__FILE__)));
