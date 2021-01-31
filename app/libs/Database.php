@@ -68,5 +68,9 @@ class Database
         return $this->stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function rowCount(){
+        return $this->stmt->rowCount();
+    }
+
 
 }

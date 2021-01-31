@@ -11,7 +11,6 @@ class Page
     public function __construct()
     {
         $this->db = new Database();
-        echo 'db is connected';
     }
 
     public function addUser(){
@@ -30,6 +29,11 @@ class Page
         $this->db->query('SELECT * FROM users');
         return $this->db->getAll();
     }
+    public function usersCount(){
+        $this->getUsers();
+        return $this->db->rowCount();
+    }
+
 
 
 
